@@ -23,10 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+
 $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
 
 if ($_SERVER['HTTP_HOST']=="localhost") {
-    $config['base_url'] = $protocol.$_SERVER['HTTP_HOST']."/gazella";
+    $config['base_url'] = $protocol.$_SERVER['HTTP_HOST']."/emlakcd";
 } else {
     $config['base_url'] = $protocol.$_SERVER['HTTP_HOST'];
 }
@@ -41,7 +42,7 @@ if ($_SERVER['HTTP_HOST']=="localhost") {
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
